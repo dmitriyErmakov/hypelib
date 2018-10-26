@@ -2,7 +2,7 @@
 
 <@common.page>
 
-    <#if message??>${message}</#if>
+
     <h1>Регистрация</h1>
     <div class="login_form">
         <form action="/registration" method="post">
@@ -31,5 +31,6 @@
                 </div>
             </div>
         </form>
+        <#if message??>${message}</#if>
     </div>
 </@common.page>
