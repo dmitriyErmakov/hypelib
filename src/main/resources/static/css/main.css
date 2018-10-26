@@ -1,4 +1,7 @@
 @charset "utf-8";
+
+
+
 input,
 button,
 textarea {
@@ -85,34 +88,67 @@ body {
     margin: 0;
     color: #000;
     font-size: 20px;
+    background: #eee;
 }
 input {
-    border: 2px solid #000;
-    padding: 20px 15px;
-    font-size: 20px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 18px;
     text-align: left;
 }
-.login_form{
-    padding-top: 100px;
-    max-width: 480px;
-    margin: 0 auto;
+input[type="submit"]{
+    background: #198CCB;
+    color: #fff;
+    min-width: 200px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
 }
-.login_form h1{
+label{
+    display: block;
+}
+.login_form{
+    padding: 100px;
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+}
+h1{
     text-align: center;
 }
 .login_form div{
     margin-bottom: 10px;
     vertical-align: middle;
 }
+
+
 .btn_login{
-    background: #198CCB;
-    color: #fff;
-    min-width: 200px;
-    text-align: center;
-    border: none;
     display: block;
     margin: 0 auto;
 }
 .btn_form_login{
     min-width: 480px;
+}
+.go-reg{
+    font-size: 15px;
+}
+@media screen and (max-width: 1440px) {
+
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+    .login_form{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 787px) {
+
+}
+@media screen and (max-width: 640px) {
+
+}
+@media screen and (max-width: 480px) {
+
 }
