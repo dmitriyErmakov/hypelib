@@ -1,6 +1,7 @@
 <#import "parts/common.ftl" as common>
 
 <@common.page>
+    <a href="/registration">Add new user</a>
     <div class="login_form">
         <h1>Авторизация</h1>
         <form action="/login" method="post">
@@ -31,7 +32,3 @@
         </form>
     </div>
 </@common.page>
-
-
-
-
