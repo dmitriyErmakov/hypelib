@@ -33,6 +33,7 @@
             <div class="col-6">Не зарегестрированы?</div>
             <div class="col-6"><a href="/registration">Зарегестрироваться</a></div>
         </div>
+        <#if message??>${message}</#if>
     </div>
 
 </@common.page>
