@@ -1,6 +1,6 @@
 package com.example.hypelib.controller;
 
-import com.example.hypelib.dialog.Phrase;
+import com.example.hypelib.util.Phrase;
 import com.example.hypelib.domain.Role;
 import com.example.hypelib.domain.User;
 import com.example.hypelib.repo.UserRepo;
@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import javax.persistence.CollectionTable;
 import java.util.Collections;
 import java.util.Map;
 

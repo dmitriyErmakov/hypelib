@@ -1,4 +1,4 @@
-package com.example.hypelib.dialog;
+package com.example.hypelib.util;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
