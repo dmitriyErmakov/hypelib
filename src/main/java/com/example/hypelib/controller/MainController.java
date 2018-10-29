@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import java.util.Map;
-
 @Controller
 @AllArgsConstructor
 public class MainController {
@@ -23,27 +21,19 @@ public class MainController {
     }
 
     @GetMapping("/main")
-    public String main(Map<String, Object> model) {
-        putBookListIntoModel(model);
+    public String main() {
         return "main";
     }
 
     @PostMapping("/main")
     public String addBook(
             @AuthenticationPrincipal User user,
-            @ModelAttribute Book book,
-            Map<String, Object> model
+            @ModelAttribute Book book
     ) {
 
         book.setPublisher(user);
         bookRepo.save(book);
 
-        putBookListIntoModel(model);
         return "main";
-    }
-
-    private void putBookListIntoModel(Map<String, Object> model) {
-        Iterable<Book> bookList = bookRepo.findAll();
-        model.put("bookList", bookList);
     }
 }

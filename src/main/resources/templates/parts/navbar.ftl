@@ -10,6 +10,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="/main">Управление книгами <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/booklist">Список книг <span class="sr-only">(current)</span></a>
+            </li>
             <li class="log_out">
                 <@auth.logout />
             </li>
